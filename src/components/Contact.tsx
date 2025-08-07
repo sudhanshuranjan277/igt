@@ -24,22 +24,22 @@ const Contact = () => {
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-accent rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             {/* Logos */}
             <div className="flex flex-col gap-4">
               <div className="bg-red-800 rounded-lg p-3 inline-block">
-                <div className="text-yellow-400 font-bold text-xs">INSTITUTE OF GLOBAL TECHNOLOGY</div>
+                <div className="text-yellow-400 font-bold text-xs text-center">INSTITUTE OF GLOBAL TECHNOLOGY</div>
               </div>
             </div>
 
             <div className="space-y-6">
               <div className="text-center">
                 <p className="text-lg text-foreground mb-2">Organised by</p>
-                <h2 className="text-2xl font-bold text-foreground mb-2">
-                  INSTITUTE OF GLOBAL TECHNOLOGY
+                <h2 className="text-2xl font-bold text-foreground mb-2 ">
+                INSTITUTE OF GLOBAL TECHNOLOGY
                 </h2>
                 <h3 className="text-xl font-bold text-foreground">
                   AND INTRINO ROBOTICS & TECHNOLOGIES PVT LTD
@@ -68,7 +68,7 @@ const Contact = () => {
                 onClick={handleContactClick}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-4 text-lg font-semibold rounded-xl shadow-glow-primary transition-all duration-300 hover:scale-105"
               >
-                Contact Us
+                Join Now 
               </Button>
             </div>
           </div>
@@ -108,20 +108,7 @@ const Contact = () => {
                   </div>
 
                   <div className="text-center pt-4">
-                    <div 
-                      onClick={handleQRClick}
-                      className="inline-flex flex-col items-center gap-3 p-4 rounded-lg bg-secondary/20 hover:bg-secondary/30 transition-colors cursor-pointer"
-                    >
-                      <img 
-                        src={qrCode} 
-                        alt="QR Code for Registration" 
-                        className="w-24 h-24 rounded-lg"
-                      />
-                      <div className="text-center">
-                        <div className="text-lg font-bold text-foreground">SCAN &</div>
-                        <div className="text-lg font-bold text-foreground">REGISTER</div>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
               </CardContent>
