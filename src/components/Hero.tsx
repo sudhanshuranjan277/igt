@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroImage from "@/assets/hero-vr.jpg";
 import igtLogo from "@/assets/igt-logo.png";
+import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-vr.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -24,32 +24,28 @@ const Hero = () => {
         <div className="absolute bottom-20 right-10 w-2 h-2 bg-accent/50 rounded-full animate-pulse" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="text-center lg:text-left">
-            {/* Logos */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
-              <div className="bg-red-800 rounded-lg p-3">
-                <div className="text-yellow-400 font-bold text-xs">INSTITUTE OF GLOBAL TECHNOLOGY</div>
-              </div>
-              
-              <div className="mt-8 p-4 bg-card/20 backdrop-blur-sm border border-primary/30 rounded-xl">
-                <div className="flex items-center gap-4">
-                  <img 
-                    src="/lovable-uploads/44c19669-7f24-4818-8b4e-03bd6869535a.png" 
-                    alt="Institute of Global Technology" 
-                    className="w-20 h-20 object-contain"
-                  />
-                  <div>
-                    <div className="text-xl font-bold bg-cyber-gradient bg-clip-text text-transparent">
-                      IGT INTRINO
-                    </div>
-                  </div>
+      <div className="container mx-auto px-4 relative z-10 pt-20"> {/* Added pt-20 for navbar spacing */}
+        {/* Logo moved to top - outside the main grid */}
+        <div className="flex mb-5 -mt-3 justify-start pl-40"> {/* Shifted right with pl-8 */}
+          <div className="p-3 bg-card/20 backdrop-blur-sm border border-primary/30 rounded-xl w-fit"> {/* Made more compact */}
+            <div className="flex items-center gap-3"> {/* Reduced gap */}
+              <img 
+                src="/lovable-uploads/44c19669-7f24-4818-8b4e-03bd6869535a.png" 
+                alt="Institute of Global Technology" 
+                className="w-16 h-16 object-contain" // Smaller logo
+              />
+              <div>
+                <div className="text-lg font-bold bg-cyber-gradient bg-clip-text text-transparent"> {/* Smaller text */}
+                  IGT INTRINO
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div className="text-center lg:text-left">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="bg-cyber-gradient bg-clip-text text-transparent">
